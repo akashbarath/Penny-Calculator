@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Penny Calculator</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript" src="js/penny_calculator.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="row header">
+    <h1>Penny Calculator</h1>
+  </div>
+  <div class="row body">
+    <form>
+      <ul>
+        <li>
+          <p>
+            <label for="input">Input</label>
+            <input type="text" id="amount" placeholder="Ex: 123, £123, £123.04p" />
+          </p>
+        </li>        
+        <li><div class="divider"></div></li>
+        <li>
+          <label for="result">Result</label>
+          <input type="text" class="resizedTextbox" id="result" disabled="disabled" />
+        </li>
+        <li>
+          <small>Press "Enter" key to display result</small>
+        </li>
+      </ul>
+    </form> 
+	<script>
+		// Event listener for amount field.
+		document.getElementById("amount").addEventListener("keydown", calculateCoins);
+	</script> 
+</div>
+</div>
+</body>
+</html>
