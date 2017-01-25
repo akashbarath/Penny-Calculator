@@ -54,6 +54,10 @@ function calculate(x){
 		// Add the remainder to the value.
 		x = x % coins[i];
 		coinValues[i] = calc;
+		
+		if(x===0){
+			break;
+		}
 	}
 	console.log (coinValues);
 	return coinValues;
